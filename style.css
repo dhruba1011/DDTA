@@ -1,0 +1,32 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "mistral";
+}
+body {
+  display: flex;
+  justify-content: center;
+  background-color: violet;
+  height: 100vh;
+}
+img {
+  max-width: 120px;
+  border: 3px solid white;
+  border-radius: 10px;
+  float: left;
+  margin-right: 15px;
+}
+.wrapper {
+  margin: 120px auto;
+  width: 70%;
+}
+.text-box {
+  color: white;
+}
+.text-box h2{
+	font-size: 40px;
+}
+.text-box p{
+	font-size: 18px;
+	font-family: 'Segoe UI';
+}
