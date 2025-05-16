@@ -1,20 +1,29 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background: #f4f4f4;
+  background: #ecf1bd;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 header {
-  background: #333;
+  background: #f38d07;
   color: white;
   padding: 15px;
   text-align: center;
 }
 
 nav {
-  background: #555;
-  text-align: center;
+  background: #523202;
+  text-align: left;
   padding: 10px 0;
 }
 
@@ -29,6 +38,7 @@ nav a:hover {
 }
 
 main {
+  flex: 1;
   padding: 20px;
   background: white;
   margin: 10px;
@@ -36,7 +46,7 @@ main {
 
 footer {
   text-align: center;
-  padding: 10px;
-  background: #333;
+  padding: 10px 0;
+  background: #f38d07;
   color: white;
 }
