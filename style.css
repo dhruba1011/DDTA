@@ -25,16 +25,24 @@ nav {
   background: #523202;
   text-align: left;
   padding: 10px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
 }
 
 nav a {
   color: white;
-  margin: 0 15px;
+  margin: 0 10px;
   text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background 0.2s;
 }
 
 nav a:hover {
   text-decoration: underline;
+  background: #7a4d09;
 }
 
 main {
@@ -42,6 +50,8 @@ main {
   padding: 20px;
   background: white;
   margin: 10px;
+  border-radius: 8px;
+  box-sizing: border-box;
 }
 
 footer {
@@ -49,4 +59,38 @@ footer {
   padding: 10px 0;
   background: #f38d07;
   color: white;
+}
+
+/* Responsive Styles */
+@media (max-width: 700px) {
+  main {
+    margin: 5px;
+    padding: 10px;
+  }
+  nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
+  nav a {
+    display: block;
+    margin: 5px 0;
+    width: 90%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 400px) {
+  header {
+    padding: 8px;
+    font-size: 1.1em;
+  }
+  main {
+    padding: 5px;
+    font-size: 0.95em;
+  }
+  footer {
+    padding: 6px 0;
+    font-size: 0.95em;
+  }
 }
