@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C Code Examples</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>C Code Examples</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="basics.html">C Basics</a></li>
+                <li><a href="advanced.html">Advanced Topics</a></li>
+                <li><a href="examples.html">Code Examples</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Hello World Example</h2>
+            <pre>
+#include <stdio.h>
+
+int main() {
+    printf("Hello, World!\n");
+    return 0;
+}
+            </pre>
+            <p>This is a simple program that prints "Hello, World!" to the console.</p>
+        </section>
+        <section>
+            <h2>Factorial Calculation</h2>
+            <pre>
+#include <stdio.h>
+
+int main() {
+    int n, i, factorial = 1;
+    printf("Enter a number: ");
+    scanf("%d", &n);
+    
+    for(i = 1; i <= n; i++) {
+        factorial *= i;
+    }
+    printf("Factorial of %d is %d\n", n, factorial);
+    return 0;
+}
+            </pre>
+            <p>This program calculates the factorial of a given number.</p>
+        </section>
+    </main>
+    <footer>
+        <p>© 2025 C Programming Tutorial. All rights reserved.</p>
+    </footer>
+</body>
+</html>
