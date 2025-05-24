@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>MySQL Practical Assignment</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f9f9f9;
+            margin: 20px;
+            color: #333;
+        }
+
+        h1 {
+            text-align: center;
+            color: #0077cc;
+        }
+
+        .assignment {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+
+        .question {
+            border-radius: 4px;
+            border: 1px solid #ddd;
+            line-height: 1.6;
+            padding: 5px 5px;
+            font-weight: bold;
+            color: #555;
+        }
+
+        h2 {
+            color: #004080;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 5px;
+        }
+
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+
+        ol {
+            padding-left: 20px;
+            margin-top: 10px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>MySQL Practical Assignment</h1>
+
+    <div class="assignment">
+        <h2>Q1. Student Database Operations (SchoolDB)</h2>
+        <p class="question">
+            Database Name: SchoolDB<br>
+            Table Name: Students<br><br>
+            StudentID (INT, Primary Key, Auto Increment)<br>
+            FullName (VARCHAR(100), NOT NULL)<br>
+            DOB (DATE, NOT NULL)<br>
+            Gender (ENUM('Male', 'Female'), NOT NULL)<br>
+            Email (VARCHAR(100), UNIQUE)<br>
+            Phone (VARCHAR(15), NOT NULL)<br>
+        </p>
+        <ol>
+            <li>Insert at least 5 records into the Students table.</li>
+            <li>Insert at least 2 records with only StudentID, FullName, and DOB.</li>
+            <li>Write a query to add 2 records in a single query.</li>
+            <li>Display all records.</li>
+            <li>Display only name, dob, gender of all students.</li>
+            <li>Show record with StudentID = 22.</li>
+            <li>Display only Female students.</li>
+            <li>Display Male students whose name starts with M.</li>
+            <li>Show students born after 2005.</li>
+        </ol>
+    </div>
+
+    <div class="assignment">
+        <h2>Q2. Student Course Management (YCTC)</h2>
+        <p class="question">
+            Database Name: YCTC<br>
+            Table Name: Students<br><br>
+            REGNO VARCHAR(30) PRIMARY KEY<br>
+            Name VARCHAR(100) NOT NULL<br>
+            COURSE VARCHAR(50) NOT NULL<br>
+            BATCH INT NOT NULL<br>
+            FEES INT NOT NULL<br>
+            DURATION VARCHAR(20)<br>
+        </p>
+        <ol>
+            <li>Insert 10 records in the table.</li>
+            <li>Count total number of students.</li>
+            <li>Update BATCH = 24005 where Course = 'CDTA'.</li>
+            <li>Update Fees = 5000 where Batch = 34002.</li>
+            <li>Update Duration = '7 month' where COURSE = 'DDTA' and batch is 34006 or 34007.</li>
+            <li>Add Fees 500 to all students.</li>
+            <li>Reduce Fees by 400 for students not in CFAS.</li>
+            <li>Update COURSE of student SUMIT SEN to ADFAS.</li>
+            <li>Delete students whose COURSE = 'DFAS' and FEES = 4000.</li>
+        </ol>
+    </div>
+
+    <div class="assignment">
+        <h2>Q3. Table Modification (YOUTH)</h2>
+        <p class="question">
+            Database Name: YOUTH<br>
+            Table Name: Student<br><br>
+            REGNO VARCHAR(30)T<br>
+            Name VARCHAR(100)T<br>
+            COURSE VARCHAR(50)T<br>
+            BATCH INT<br>
+        </p>
+        <ol>
+            <li>Add field MARKS (INT) at the end.</li>
+            <li>Change field name REGNO to Registration.</li>
+            <li>Add field ADDRESS (VARCHAR(30)) after Name.</li>
+            <li>Make COURSE and BATCH not null.</li>
+            <li>Delete the field BATCH.</li>
+        </ol>
+    </div>
+
+    <div class="assignment">
+        <h2>Q4. Course Table Design (AcademyDB)</h2>
+        <p class="question">
+            DATABASE: AcademyDB<br>
+            TABLE: Courses<br><br>
+            CourseID :INT PRIMARY KEY AUTO_INCREMENT<br>
+            CourseName: VARCHAR(100) NOT NULL<br>
+            Duration :INT<br>
+            Fee :INT NOT NUL<br>
+        </p>
+        <ol>
+            <li>Insert 5 courses.</li>
+            <li>Update fee of 'DTP' course to 4000.</li>
+            <li>Display courses with duration more than 6 months.</li>
+            <li>Delete course 'FA' if exists.</li>
+            <li>Add column Instructor (VARCHAR(100)) after CourseName.</li>
+        </ol>
+    </div>
+
+    <div class="assignment">
+        <h2>Q5. Marks Table Operations (ResultsDB)</h2>
+        <p class="question">
+            Database Name: ResultsDB<br>
+            Table Name: Marks<br><br>
+            StudentID INT<br>
+            Subject VARCHAR(50)<br>
+            MarksObtained INT<br>
+        </p>
+        <ol>
+            <li>Insert at least 6 records for 3 different students.</li>
+            <li>Display all marks for student ID 101.</li>
+            <li>Update marks in "Maths" to 95 for student ID 102.</li>
+            <li>Delete records for student ID 103.</li>
+            <li>Add column Grade (CHAR(2)) at the end of the table.</li>
+        </ol>
+    </div>
+
+    <div class="assignment">
+        <h2>Q6. Relationships Between Tables (CollegeDB)</h2>
+        <p class="question">
+            Database Name: CollegeDB<br>
+            Tables:<br>
+            Students (StudentID INT, FullName VARCHAR(100))<br>
+            Courses (CourseID INT, CourseName VARCHAR(100))<br>
+            Enrollments (EnrollmentID INT, StudentID INT, CourseID INT, EnrollDate DATE)<br><br>
+            Relationships:<br>
+            - Students to Enrollments (1 to Many)<br>
+            - Courses to Enrollments (1 to Many)<br>
+        </p>
+        <ol>
+            <li>Insert 3 students and 3 courses.</li>
+            <li>Insert enrollment records mapping students to courses.</li>
+            <li>Use JOIN to display Student Name, Course Name, and Enroll Date.</li>
+            <li>Display students not enrolled in any course (LEFT JOIN).</li>
+            <li>Delete an enrollment record by EnrollmentID.</li>
+        </ol>
+    </div>
+</body>
+
+</html>
