@@ -1,60 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <title>Algorithm & Flowchart Tutorial</title>
+  <title>DDTA - Assignments</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <header><h1>Algorithm and Flowchart Tutorial</h1></header>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="algorithm.html">Algorithm</a>
-    <a href="flowchart.html">Flowchart</a>
-    <a href="examples.html">Examples</a>
-    <a href="mysql_assign.html">Assignments on MySQL</a>
-  </nav>
+  <div id="header"></div>
   <main>
+       <div class="container">
+        <h1>Diploma in Digital Technology Applications (DDTA)</h1>
 
- <h1>1. Algorithms</h1>
+        <p>The <span class="highlight">DDTA (Diploma in Digital Technology Applications)</span> course is a comprehensive training program designed to equip students with the foundational and intermediate skills necessary to thrive in the software and application development field. This course is ideal for students aiming to build a career in IT, programming, or web development.</p>
 
-  <div class="section">
-    <h2>Introduction</h2>
-    <p><strong>Understanding Algorithms:</strong> An algorithm is a well-defined, step-by-step procedure designed to solve a specific problem or perform a particular task. It acts as the blueprint for solving computational challenges efficiently, whether it involves sorting data, searching for information, or optimizing results. Algorithms are the foundation of all computer programs and software applications, helping systems perform operations in a logical and structured way. They are usually evaluated based on their correctness, efficiency (in terms of time and space), and clarity, making it essential for programmers to select or design the right algorithm for each situation.</p>
+        <h2>Course Highlights</h2>
+        <p>The DDTA course includes a blend of programming languages, web technologies, and fundamental computing concepts:</p>
 
-    <p><strong>Introduction to Flowcharts:</strong> A flowchart is a visual representation of an algorithm or process, using standardized symbols to denote actions, decisions, inputs, and outputs. Flowcharts help programmers and developers understand the logical flow of a problem and plan solutions before writing actual code. By clearly mapping out each step and the decision paths, flowcharts make complex algorithms easier to visualize, debug, and communicate with others. Whether you are designing a simple program or modeling a real-world process, flowcharts serve as a powerful tool for structured thinking and effective problem-solving.</p>
-  </div>
+        <section>
+            <h2>1. C Programming</h2>
+            <ul>
+                <li>Variables, data types, and operators</li>
+                <li>Control structures (if, switch, loops)</li>
+                <li>Functions and arrays</li>
+                <li>Pointers and structures</li>
+                <li>File handling in C</li>
+            </ul>
+        </section>
 
-  <div class="section">
-    <h2>Types of Algorithms</h2>
+        <section>
+            <h2>2. Java Programming</h2>
+            <ul>
+                <li>Java syntax and structure</li>
+                <li>OOP principles (classes, objects, inheritance, polymorphism)</li>
+                <li>Exception handling and file I/O</li>
+                <li>GUI development with Swing</li>
+            </ul>
+        </section>
 
-    <p><strong>Sorting Algorithms:</strong> Arrange data in a specific order.<br>
-    <span class="examples">Examples: Bubble Sort, Merge Sort, Quick Sort, Heap Sort.</span></p>
+        <section>
+            <h2>3. HTML</h2>
+            <ul>
+                <li>HTML structure and tags</li>
+                <li>Forms, tables, and lists</li>
+                <li>Embedding images, videos, and links</li>
+                <li>Semantic HTML5 elements</li>
+            </ul>
+        </section>
 
-    <p><strong>Searching Algorithms:</strong> Find specific elements in a dataset.<br>
-    <span class="examples">Examples: Binary Search, Linear Search, Depth-First Search (DFS), Breadth-First Search (BFS).</span></p>
+        <section>
+            <h2>4. MySQL</h2>
+            <ul>
+                <li>Database and table creation</li>
+                <li>SQL queries (SELECT, INSERT, UPDATE, DELETE)</li>
+                <li>Joins, constraints, and indexing</li>
+                <li>Data retrieval and reporting</li>
+            </ul>
+        </section>
 
-    <p><strong>Dynamic Programming:</strong> Breaks problems into smaller overlapping subproblems.<br>
-    <span class="examples">Examples: Fibonacci Sequence, Knapsack Problem, Longest Common Subsequence.</span></p>
+        <section>
+            <h2>5. Algorithms and Flowcharts</h2>
+            <ul>
+                <li>Algorithm design and analysis</li>
+                <li>Problem-solving techniques</li>
+                <li>Flowchart symbols and construction</li>
+                <li>Practical examples and exercises</li>
+            </ul>
+        </section>
 
-    <p><strong>Greedy Algorithms:</strong> Make the best choice at each step.<br>
-    <span class="examples">Examples: Dijkstra’s Algorithm, Prim’s Algorithm, Huffman Encoding.</span></p>
+        <section>
+            <h2>Why Choose DDTA?</h2>
+            <ul>
+                <li>Balanced mix of coding, web development, and database skills</li>
+                <li>Ideal for students preparing for entry-level jobs or further studies in IT</li>
+                <li>Hands-on projects and assignments</li>
+                <li>Enhances both technical knowledge and logical reasoning</li>
+            </ul>
+        </section>
 
-    <p><strong>Divide and Conquer:</strong> Divide a problem into smaller subproblems, solve them, and combine results.<br>
-    <span class="examples">Examples: Merge Sort, Quick Sort, Binary Search.</span></p>
+    </div>
 
-    <p><strong>Backtracking:</strong> Explore all possibilities to solve a problem.<br>
-    <span class="examples">Examples: Sudoku Solver, N-Queens Problem, Maze Solver.</span></p>
-  </div>
-
-  <div class="section">
-    <h2>Algorithm Complexity</h2>
-    <p><strong>Time Complexity:</strong> Measures how the runtime of an algorithm grows with input size.<br>
-    Common classes: O(1), O(log n), O(n), O(n log n), O(n²), etc.</p>
-  </div>
-
-    
   </main>
-  <footer>&copy; 2025 Tutorial Hub</footer>
+ <div id="footer"></div>
+  <script>
+    // Load header and footer via fetch()
+    fetch('header.html')
+      .then(response => response.text())
+      .then(data => document.getElementById('header').innerHTML = data);
+
+    fetch('footer.html')
+      .then(response => response.text())
+      .then(data => document.getElementById('footer').innerHTML = data);
+  </script>
 </body>
+
 </html>

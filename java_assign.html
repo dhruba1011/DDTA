@@ -1,0 +1,57 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>DDTA - Assignments</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="header"></div>
+  
+  <div class="container">
+   <h1>JAVA Programming Exercises</h1>
+    <ol>
+       <li>Write a program to print "Hello, World!" in Java.</li>
+      <li>Write a program to add two numbers entered by the user.</li>
+      <li>Write a program to check if a number is even or odd.</li>
+      <li>Write a program to find the largest of three numbers.</li>
+      <li>Write a program to calculate the factorial of a number.</li>
+      <li>Write a program to print the multiplication table of a number.</li>
+      <li>Write a program to display the Fibonacci series up to N terms.</li>
+      <li>Write a program to reverse a number.</li>
+      <li>Write a program to check if a number is a palindrome.</li>
+      <li>Write a program to find the sum of digits of a number.</li>
+      <li>Write a program to check if a year is a leap year.</li>
+      <li>Write a program to convert Celsius to Fahrenheit.</li>
+      <li>Write a program to find the greatest common divisor (GCD) of two numbers.</li>
+      <li>Write a program to print prime numbers between 1 and 100.</li>
+      <li>Write a program to take an array and find its average.</li>
+      <li>Write a program to search for an element in an array.</li>
+      <li>Write a program to sort an array in ascending order.</li>
+      <li>Write a program to count the number of vowels in a string.</li>
+      <li>Write a program to reverse a string.</li>
+      <li>Write a program to check if a string is a palindrome.</li>
+      <li>Write a program to demonstrate method overloading.</li>
+      <li>Write a program to demonstrate the use of a constructor in a class.</li>
+      <li>Write a program to demonstrate the concept of inheritance.</li>
+      <li>Write a program to create a simple calculator using switch case.</li>
+      <li>Write a program to demonstrate exception handling using try-catch block.</li>
+    </ol>
+  </div>
+
+  <div id="footer"></div>
+  <script>
+    // Load header and footer via fetch()
+    fetch('header.html')
+      .then(response => response.text())
+      .then(data => document.getElementById('header').innerHTML = data);
+
+    fetch('footer.html')
+      .then(response => response.text())
+      .then(data => document.getElementById('footer').innerHTML = data);
+  </script>
+</body>
+
+</html>
