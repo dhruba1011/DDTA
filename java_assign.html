@@ -1,19 +1,17 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
-  <title>DDTA - Assignments</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YCTC - HABRA - DDTA Course</title>
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
   <div id="header"></div>
-  <main>
   
-  <div class="container">
-   <h1>JAVA Programming Exercises</h1>
+  <main class="container">
+   
+    <h1>JAVA Programming Exercises</h1>
     <ol>
        <li>Write a program to print "Hello, World!" in Java.</li>
       <li>Write a program to add two numbers entered by the user.</li>
@@ -41,20 +39,19 @@
       <li>Write a program to create a simple calculator using switch case.</li>
       <li>Write a program to demonstrate exception handling using try-catch block.</li>
     </ol>
-  </div>
-</main>
-  </div>
+
+  </main>
+  
   <div id="footer"></div>
+  
   <script>
-    // Load header and footer via fetch()
     fetch('header.html')
       .then(response => response.text())
       .then(data => document.getElementById('header').innerHTML = data);
-
+    
     fetch('footer.html')
       .then(response => response.text())
       .then(data => document.getElementById('footer').innerHTML = data);
   </script>
 </body>
-
 </html>

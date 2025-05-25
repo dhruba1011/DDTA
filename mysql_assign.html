@@ -1,19 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>MySQL Practical Assignment</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YCTC - HABRA - DDTA Course</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
   <div id="header"></div>
-  <main>
-    <h1>MySQL Practical Assignments</h1>
-    
-  <div class="container">
-    <div class="assignment">
+  
+  <main class="container">
+   
+   <h1>MySQL Practical Assignments</h1>
+        <div class="assignment">
       <h2>Q1. Student Database Operations (SchoolDB)</h2>
       <p class="question">
         Database Name: SchoolDB<br>
@@ -139,16 +138,16 @@
         <li>Delete an enrollment record by EnrollmentID.</li>
       </ol>
     </div>
-  </div>
+    
   </main>
-
+  
   <div id="footer"></div>
-   <script>
-    // Load header and footer via fetch()
+  
+  <script>
     fetch('header.html')
       .then(response => response.text())
       .then(data => document.getElementById('header').innerHTML = data);
-
+    
     fetch('footer.html')
       .then(response => response.text())
       .then(data => document.getElementById('footer').innerHTML = data);

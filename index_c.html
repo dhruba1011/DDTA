@@ -1,22 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>C Programming Tutorial</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YCTC - HABRA - DDTA Course</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="header"></div>
-    <main>
-        <section>
-            <h2>Learn C Programming</h2>
-            <p>C is a powerful general-purpose programming language. It has been widely used for system programming, creating operating systems, and application development.</p>
-            <p>Click on the menu above to explore tutorials, advanced topics, and practical code examples.</p>
-        </section>
-    </main>
-    <footer>
-        <p>© 2025 C Programming Tutorial. All rights reserved.</p>
-    </footer>
+  <div id="header"></div>
+  
+  <main class="container">
+    <ol>
+      <li>
+        **Create a Personal Profile Page**
+        Design a basic web page with your name, a photo, a short biography, and contact information using tags like
+        <code>&lt;h1&gt;</code>, <code>&lt;p&gt;</code>, <code>&lt;img&gt;</code>, and <code>&lt;a&gt;</code>.
+      </li>
+      <li>
+        **Make a Simple Contact Form**
+        Create a form with fields: name, email, message, and a submit button using the <code>&lt;form&gt;</code>,
+        <code>&lt;input&gt;</code>, and <code>&lt;textarea&gt;</code> tags.
+      </li>
+      <li>
+        **Build a Table of Student Marks**
+        Create a table showing names, subjects, and marks using <code>&lt;table&gt;</code>, <code>&lt;tr&gt;</code>,
+        <code>&lt;th&gt;</code>, and <code>&lt;td&gt;</code>.
+      </li>
+      <li>
+        **Create a List of Favorite Movies**
+        Use <code>&lt;ul&gt;</code> and <code>&lt;ol&gt;</code> to show a list of your favorite movies and TV shows.
+      </li>
+      <li>
+        **Design a Webpage with Internal Navigation**
+        Add headings for 3 sections (e.g., About, Projects, Contact) and use internal anchor links to jump to those
+        sections.
+      </li>
+      <li>
+        **Embed a YouTube Video**
+        Create a page that includes an embedded video using the <code>&lt;iframe&gt;</code> tag.
+      </li>
+      <li>
+        **Create a Resume in HTML**
+        Structure your resume with headings (Name, Objective, Education, Skills, Experience) using proper semantic tags
+        like <code>&lt;header&gt;</code>, <code>&lt;section&gt;</code>, and <code>&lt;footer&gt;</code>.
+      </li>
+      <li>
+        **Build a Simple Web Page with Images and Captions**
+        Display 3 images with captions underneath using <code>&lt;figure&gt;</code> and <code>&lt;figcaption&gt;</code>.
+      </li>
+      <li>
+        **Create a Web Page with External Links**
+        Add links to your favorite websites, blogs, and GitHub profile using
+        <code>&lt;a href="..." target="_blank"&gt;</code>.
+      </li>
+      <li>
+        **Design a Web Page Using Semantic HTML5 Tags**
+        Use <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>,
+        <code>&lt;article&gt;</code>, and <code>&lt;footer&gt;</code> to build a simple layout of a news article page.
+      </li>
+    </ol>
+  </main>
+  
+  <div id="footer"></div>
+  
+  <script>
+    fetch('header.html')
+      .then(response => response.text())
+      .then(data => document.getElementById('header').innerHTML = data);
+    
+    fetch('footer.html')
+      .then(response => response.text())
+      .then(data => document.getElementById('footer').innerHTML = data);
+  </script>
 </body>
 </html>
