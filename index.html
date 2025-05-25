@@ -1,98 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <title>DDTA - Assignments</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
   <div id="header"></div>
+
   <main>
-       <div class="container">
-        <h1>Diploma in Digital Technology Applications (DDTA)</h1>
+    <div class="container">
+      <h1>Diploma in Digital Technology Applications (DDTA)</h1>
 
-        <p>The <span class="highlight">DDTA (Diploma in Digital Technology Applications)</span> course is a comprehensive training program designed to equip students with the foundational and intermediate skills necessary to thrive in the software and application development field. This course is ideal for students aiming to build a career in IT, programming, or web development.</p>
+      <p>The <span class="highlight">DDTA (Diploma in Digital Technology Applications)</span> course is a comprehensive training program designed to equip students with the foundational and intermediate skills necessary to thrive in the software and application development field.</p>
 
-        <h2>Course Highlights</h2>
-        <p>The DDTA course includes a blend of programming languages, web technologies, and fundamental computing concepts:</p>
+      <h2>Course Highlights</h2>
+      <p>The DDTA course includes a blend of programming languages, web technologies, and fundamental computing concepts:</p>
 
-        <section>
-            <h2>1. C Programming</h2>
-            <ul>
-                <li>Variables, data types, and operators</li>
-                <li>Control structures (if, switch, loops)</li>
-                <li>Functions and arrays</li>
-                <li>Pointers and structures</li>
-                <li>File handling in C</li>
-            </ul>
-        </section>
+      <section>
+        <h2>1. C Programming</h2>
+        <ul>
+          <li>Variables, data types, and operators</li>
+          <li>Control structures (if, switch, loops)</li>
+          <li>Functions and arrays</li>
+          <li>Pointers and structures</li>
+          <li>File handling in C</li>
+        </ul>
+      </section>
 
-        <section>
-            <h2>2. Java Programming</h2>
-            <ul>
-                <li>Java syntax and structure</li>
-                <li>OOP principles (classes, objects, inheritance, polymorphism)</li>
-                <li>Exception handling and file I/O</li>
-                <li>GUI development with Swing</li>
-            </ul>
-        </section>
+      <section>
+        <h2>2. Java Programming</h2>
+        <ul>
+          <li>Java syntax and structure</li>
+          <li>OOP principles (classes, objects, inheritance, polymorphism)</li>
+          <li>Exception handling and file I/O</li>
+          <li>GUI development with Swing</li>
+        </ul>
+      </section>
 
-        <section>
-            <h2>3. HTML</h2>
-            <ul>
-                <li>HTML structure and tags</li>
-                <li>Forms, tables, and lists</li>
-                <li>Embedding images, videos, and links</li>
-                <li>Semantic HTML5 elements</li>
-            </ul>
-        </section>
+      <section>
+        <h2>3. HTML</h2>
+        <ul>
+          <li>HTML structure and tags</li>
+          <li>Forms, tables, and lists</li>
+          <li>Embedding images, videos, and links</li>
+          <li>Semantic HTML5 elements</li>
+        </ul>
+      </section>
 
-        <section>
-            <h2>4. MySQL</h2>
-            <ul>
-                <li>Database and table creation</li>
-                <li>SQL queries (SELECT, INSERT, UPDATE, DELETE)</li>
-                <li>Joins, constraints, and indexing</li>
-                <li>Data retrieval and reporting</li>
-            </ul>
-        </section>
+      <section>
+        <h2>4. MySQL</h2>
+        <ul>
+          <li>Database and table creation</li>
+          <li>SQL queries (SELECT, INSERT, UPDATE, DELETE)</li>
+          <li>Joins, constraints, and indexing</li>
+          <li>Data retrieval and reporting</li>
+        </ul>
+      </section>
 
-        <section>
-            <h2>5. Algorithms and Flowcharts</h2>
-            <ul>
-                <li>Algorithm design and analysis</li>
-                <li>Problem-solving techniques</li>
-                <li>Flowchart symbols and construction</li>
-                <li>Practical examples and exercises</li>
-            </ul>
-        </section>
+      <section>
+        <h2>5. Algorithms and Flowcharts</h2>
+        <ul>
+          <li>Algorithm design and analysis</li>
+          <li>Problem-solving techniques</li>
+          <li>Flowchart symbols and construction</li>
+          <li>Practical examples and exercises</li>
+        </ul>
+      </section>
 
-        <section>
-            <h2>Why Choose DDTA?</h2>
-            <ul>
-                <li>Balanced mix of coding, web development, and database skills</li>
-                <li>Ideal for students preparing for entry-level jobs or further studies in IT</li>
-                <li>Hands-on projects and assignments</li>
-                <li>Enhances both technical knowledge and logical reasoning</li>
-            </ul>
-        </section>
-
+      <section>
+        <h2>Why Choose DDTA?</h2>
+        <ul>
+          <li>Balanced mix of coding, web development, and database skills</li>
+          <li>Ideal for students preparing for entry-level jobs or further studies in IT</li>
+          <li>Hands-on projects and assignments</li>
+          <li>Enhances both technical knowledge and logical reasoning</li>
+        </ul>
+      </section>
     </div>
-
   </main>
- <div id="footer"></div>
+
+  <div id="footer"></div>
+
   <script>
-    // Load header and footer via fetch()
     fetch('header.html')
       .then(response => response.text())
       .then(data => document.getElementById('header').innerHTML = data);
-
+    
     fetch('footer.html')
       .then(response => response.text())
       .then(data => document.getElementById('footer').innerHTML = data);
   </script>
 </body>
-
 </html>
