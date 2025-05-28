@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>New Form Receive</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f8f8f8;
+      padding: 20px;
+    }
+    .form-container {
+      width: 950px;
+      margin: auto;
+      background: white;
+      border: 2px solid #999;
+      padding: 10px;
+    }
+    h2 {
+      text-align: center;
+    }
+    .row {
+      display: flex;
+      margin-bottom: 5px;
+      flex-wrap: wrap;
+    }
+    .label {
+      width: 140px;
+      font-weight: bold;
+      background: #000066;
+      color: white;
+      padding: 3px 5px;
+    }
+    .input {
+      flex: 1;
+      padding: 3px;
+    }
+    .section-title {
+      background: #000066;
+      color: white;
+      font-weight: bold;
+      padding: 5px;
+      margin-top: 10px;
+    }
+    input[type="text"], select, input[type="number"], input[type="date"] {
+      width: 100%;
+      box-sizing: border-box;
+    }
+    input[type="radio"], input[type="checkbox"] {
+      margin-right: 5px;
+    }
+    .qualification-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 5px;
+    }
+    .qualification-table th, .qualification-table td {
+      border: 1px solid #000066;
+      padding: 5px;
+    }
+    .qualification-table th {
+      background: #000066;
+      color: white;
+    }
+    .button-row {
+      margin-top: 15px;
+      text-align: center;
+    }
+    button {
+      padding: 6px 20px;
+      margin: 5px;
+      font-weight: bold;
+    }
+    .document-label {
+      color: red;
+      font-weight: bold;
+      margin-left: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <div class="row">
+      <div class="label">Form No</div>
+      <div class="input"><input type="text" /></div>
+      <div class="label">Course</div>
+      <div class="input"><select><option>ADDITP</option></select></div>
+      <div class="label">Date of Recv.</div>
+      <div class="input"><input type="date" value="2025-05-28" /></div>
+    </div>
+
+    <div class="row"><span style="color:red;">(Press 0 to get List)</span></div>
+
+    <div class="row">
+      <div class="label">Student Name</div>
+      <div class="input"><input type="text" /></div>
+      <div class="label">Sex</div>
+      <div class="input">
+        <label><input type="radio" name="sex" /> Male</label>
+        <label><input type="radio" name="sex" /> Female</label>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="label">Guardian Name</div>
+      <div class="input"><input type="text" /></div>
+      <div class="label"></div>
+      <div class="input">
+        <label><input type="radio" name="guardian" /> Father</label>
+        <label><input type="radio" name="guardian" /> Mother</label>
+        <label><input type="radio" name="guardian" /> Husband</label>
+        <label><input type="radio" name="guardian" /> Other</label>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="label">Address</div>
+      <div class="input"><input type="text" /></div>
+    </div>
+    <div class="row">
+      <div class="label">Post</div>
+      <div class="input"><input type="text" /></div>
+      <div class="label">Dist.</div>
+      <div class="input"><input type="text" value="North 24 Parganas" /></div>
+    </div>
+
+    <div class="row">
+      <div class="label">Pin Code</div>
+      <div class="input"><input type="text" /></div>
+      <div class="label">Phone</div>
+      <div class="input"><input type="text" /></div>
+      <div class="label">Mobile</div>
+      <div class="input"><input type="text" /></div>
+    </div>
+
+    <div class="row">
+      <div class="label">Date of Birth</div>
+      <div class="input"><input type="date" /></div>
+      <label class="document-label">📄 Document</label>
+      <div class="label">Caste</div>
+      <div class="input">
+        <label><input type="radio" name="caste" /> General</label>
+        <label><input type="radio" name="caste" /> SC</label>
+        <label><input type="radio" name="caste" /> ST</label>
+        <label><input type="radio" name="caste" /> OBC</label>
+        <label><input type="radio" name="caste" /> Other</label>
+      </div>
+      <label class="document-label">📄 Document</label>
+    </div>
+
+    <div class="section-title">Qualification (General)</div>
+    <table class="qualification-table">
+      <tr>
+        <th>Examination Passed</th>
+        <th>Year</th>
+        <th>Board / University</th>
+        <th>% of Marks</th>
+        <th>Document</th>
+      </tr>
+      <tr><td><input type="text" /></td><td><input type="text" /></td><td><input type="text" /></td><td><input type="text" /></td><td><input type="checkbox" /></td></tr>
+      <tr><td><input type="text" /></td><td><input type="text" /></td><td><input type="text" /></td><td><input type="text" /></td><td><input type="checkbox" /></td></tr>
+      <tr><td><input type="text" /></td><td><input type="text" /></td><td><input type="text" /></td><td><input type="text" /></td><td><input type="checkbox" /></td></tr>
+    </table>
+
+    <div class="section-title">Qualification (Technical)</div>
+    <div class="row">
+      <div class="input"><input type="text" /></div>
+      <label class="document-label">📄 Document</label>
+    </div>
+
+    <div class="row">
+      <div class="label">Session Half</div>
+      <div class="input">
+        <select><option>A</option><option>B</option></select>
+      </div>
+      <div class="label">Semester</div>
+      <div class="input">
+        <select><option>1</option><option>2</option><option>3</option></select>
+      </div>
+      <div class="label">Received By</div>
+      <div class="input"><input type="text" value="CENTRE IN CHARGE" /></div>
+      <label><input type="checkbox" /> Scholarship</label>
+    </div>
+
+    <div class="button-row">
+      <button>Add</button>
+      <button disabled>Change</button>
+      <button>Clear</button>
+    </div>
+  </div>
+</body>
+</html>
