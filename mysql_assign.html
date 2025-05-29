@@ -19,10 +19,10 @@
         Table Name: Students<br><br>
         StudentID (INT, Primary Key, Auto Increment)<br>
         FullName (VARCHAR(100), NOT NULL)<br>
-        DOB (DATE, NOT NULL)<br>
-        Gender (ENUM('Male', 'Female'), NOT NULL)<br>
+        DOB (DATE)<br>
+        Gender (ENUM('Male', 'Female'))<br>
         Email (VARCHAR(100), UNIQUE)<br>
-        Phone (VARCHAR(15), NOT NULL)<br>
+        Phone (VARCHAR(15))<br>
       </p>
       <ol>
         <li>Insert at least 5 records into the Students table.</li>
@@ -30,7 +30,7 @@
         <li>Write a query to add 2 records in a single query.</li>
         <li>Display all records.</li>
         <li>Display only name, dob, gender of all students.</li>
-        <li>Show record with StudentID = 22.</li>
+        <li>Show record with StudentID = 4.</li>
         <li>Display only Female students.</li>
         <li>Display Male students whose name starts with M.</li>
         <li>Show students born after 2005.</li>
